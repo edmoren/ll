@@ -8,7 +8,7 @@
 <ul>
   {% for entry in entries %}
     <li>
-      <p>{{ entry.date_added|date:'Y / M / d, H:i' }}</p>
+      <p>{{ entry.date_added|date:'Y / M / d, H:i' }}</p><a href="{% url 'learning_logs:edit_entry' entry.id %}">Edit</a>
       <p>{{ entry.text|linebreaks }}</p>
     </li>
   {% empty %}
