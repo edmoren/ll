@@ -17,9 +17,9 @@
           data-target="#navbarCollapse" aria-controls="navbarCollapse"
           aria-expand="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse-navbar-collapse" id="navbarCollapse">
-          <ul class="navebar-nav mr-auto">
-            <li class="nave-item">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
               <a class="nav-link" href="{% url 'learning_logs:topics' %}">
                 Topics</a></li>
           </ul>
@@ -45,7 +45,7 @@
 
     <main role="main" class="container">
       <div class="pb-2 mb-2 border-bottom">
-        {% block page-header %}{% endblock pageheader %}
+        {% block page_header %}{% endblock page_header %}
       </div>
       <div>
         {% block content %}{% endblock content %}
