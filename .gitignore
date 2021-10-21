@@ -3,3 +3,6 @@ ll_env/
 
 #ignore all cached builds
 *.pyc
+
+#ignore database files
+*.sqlite3
